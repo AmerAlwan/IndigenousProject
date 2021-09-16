@@ -34,11 +34,11 @@ class HorizontalAutoScrollList extends Component {
         return (
         <Row>
             <Col xs={12}>
-                <h6 style={{margin:"0 0.5rem"}}>{"Names of the children who died at residential schools (2800)"}</h6>
-                <div className="content-box" style={{maxWidth: "85rem", minHeight: "3rem", margin: "auto"}}>
+                <h2 style={{margin:"0 0.5rem", textAlign: "center", fontWeight: "bold"}}>{"Children who Died at Residential Schools (2800)"}</h2>
+                <div className="" style={{minHeight: "3rem", margin: "auto"}}>
                     <Marquee
                         speed="40"
-                        gradientColor={[28, 32, 35]}
+                        gradientColor={[33, 37, 41]}
                         style={{marginTop: "0.5rem", fontSize: "2rem"}}
                     >
                         {this.state.names}

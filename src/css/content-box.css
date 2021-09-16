@@ -10,6 +10,13 @@
     margin: 0.5rem;
 }
 
+.content-box-none {
+    text-align: left;
+    color: #626b75;
+    padding-top: 0.5rem;
+    margin: 0.5rem;
+}
+
 .content-box-title {
     color: #a8b3c0;
     margin: 0 0.5rem;

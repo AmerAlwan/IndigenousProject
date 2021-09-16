@@ -4,7 +4,7 @@ import * as config from '../config.json'
 import '../css/content-box.css';
 
 function Stat(props) {
-    return (<Row> <Col xs={12}><span style={{fontWeight:"heavy", position: "inline", margin: "1rem"}}>{props.title + ": "}</span><span style={{position: "inline"}}>{props.text}</span></Col></Row>);
+    return (<Row style={{marginBottom: "0.9rem"}}> <Col xs={12}><span style={{fontWeight:"bold", position: "inline", margin: "4rem 0.5rem"}}>{props.title + ": "}</span><span style={{position: "inline"}}>{props.text}</span></Col></Row>);
 }
 
 class HomeStats extends Component {
@@ -17,8 +17,7 @@ class HomeStats extends Component {
         return (
             <>
                 <div className="content-box" style={{maxWidth: "20rem", padding: "0.5rem"}}>
-                    <div className="content-box-title">Stats</div>
-                    <div style={{marginLeft: "0.5rem"}}>
+                    <div style={{marginLeft: "0rem"}}>
                         <Stat title="Attendees" text={this.state.attendees}/>
                         <Stat title="Total Deaths" text={this.state.total_deaths}/>
                         <Stat title="Documented Deaths" text={this.state.documented_deaths}/>
